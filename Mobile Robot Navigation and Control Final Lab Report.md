@@ -1,4 +1,4 @@
-# Mobile Robot Navigation and Control Final Lab Report
+#Final Lab Report
 
 Chenzhi Zhan#12012505 , Yuxuan Zhang#12012508
 
@@ -20,9 +20,14 @@ The task of lab 7 starts from location P1, robot should move to P2,P3,P4 and bac
   roscore
   ssh pi@192.168.3.33
   ```
+  ```
+  roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=$HOME/classroom.yaml
 
   ```
-  cd catkin_ws/src/
+  ```
+  cd catkin_ws/src/simple_navigation_goals/src/
+
+  python map_navigation.py
   ```
 
   
@@ -30,7 +35,7 @@ The task of lab 7 starts from location P1, robot should move to P2,P3,P4 and bac
 - SBC
 
   ```
-  roslaunch bringup
+  roslaunch turtlebot3_bringup turtlebot3_robot.launch
   ```
 
   
